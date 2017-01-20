@@ -67,7 +67,7 @@ display('press any key to play slideshow');
 pause;
 
 % play velocity histogram slideshow
-
+%{
 bins=20;
 hsum=zeros(1,bins-1);
 for j=1:tsteps % for each iteration recorded
@@ -84,6 +84,7 @@ hold on;
 plot(linspace(-3,3,bins-1),2*hsum/tsteps);
 
 pause;
+%}
 
 
 %calculate time avg histogram for velocity
